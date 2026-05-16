@@ -2,7 +2,7 @@ services:
 
   evolution-api:
     container_name: evolution_api
-    image: atendai/evolution-api:v2.1.1
+    image: evoapicloud/evolution-api:v2.3.7
     restart: always
     ports:
       - "8080:8080"
@@ -22,7 +22,7 @@ services:
     ports:
       - 5432:5432
     environment:
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_PASSWORD=djklsa57S
     volumes:
       - postgres_data:/var/lib/postgresql/data
     expose:
